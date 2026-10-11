@@ -12,7 +12,7 @@ import java.util.List;
 
 @RestController
 @RequiredArgsConstructor
-@RequestMapping("/girlgroups")
+@RequestMapping("/Rescene")
 public class ResceneController {
     private final ResceneService resceneService;
 

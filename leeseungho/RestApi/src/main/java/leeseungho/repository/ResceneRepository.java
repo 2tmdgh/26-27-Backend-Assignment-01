@@ -3,6 +3,7 @@ package leeseungho.repository;
 import leeseungho.domain.Rescene;
 import org.springframework.stereotype.Repository;
 
+import java.time.LocalDate;
 import java.util.*;
 
 @Repository
@@ -11,16 +12,46 @@ public class ResceneRepository {
     private long sequence = 0L;
 
     public ResceneRepository() {
-        save(new Rescene(null, "원이", "20040525", "리센느", "오이쉬"));
-        save(new Rescene(null, "리브", "20061011", "리센느", "너도? 아, 나도"));
-        save(new Rescene(null, "미나미", "20061129", "리센느", "OO 야호"));
-        save(new Rescene(null, "메이", "20080819", "리센느", "기회는 그립감이 좋다!"));
-        save(new Rescene(null, "제나", "20081127", "리센느", "내는 원래 OO을 사랑해"));
+        save(Rescene.builder()
+                .name("원이")
+                .birth(LocalDate.of(2004, 5, 25))
+                .groupName("리센느")
+                .word("오이쉬")
+                .build());
+        save(Rescene.builder()
+                .name("리브")
+                .birth(LocalDate.of(2006, 10, 11))
+                .groupName("리센느")
+                .word("너도? 아, 나도")
+                .build());
+        save(Rescene.builder()
+                .name("미나미")
+                .birth(LocalDate.of(2006, 11, 29))
+                .groupName("리센느")
+                .word("OO 야호~")
+                .build());
+        save(Rescene.builder()
+                .name("메이")
+                .birth(LocalDate.of(2008, 8, 19))
+                .groupName("리센느")
+                .word("OO은 그립감이 좋다!")
+                .build());
+        save(Rescene.builder()
+                .name("제나")
+                .birth(LocalDate.of(2008, 11, 27))
+                .groupName("리센느")
+                .word("내는 원래 OO을 사랑해")
+                .build());
     }
 
     public Rescene save(Rescene newRescene) {
-        Rescene rescene = new Rescene(++sequence, newRescene.getName(),
-                newRescene.getBirth(), newRescene.getMajor(), newRescene.getWord());
+        Rescene rescene = Rescene.builder()
+                .id(++sequence)
+                .name(newRescene.getName())
+                .birth(newRescene.getBirth())
+                .groupName(newRescene.getGroupName())
+                .word(newRescene.getWord())
+                .build();
         girlgroup.put(rescene.getId(), rescene);
         return rescene;
     }
