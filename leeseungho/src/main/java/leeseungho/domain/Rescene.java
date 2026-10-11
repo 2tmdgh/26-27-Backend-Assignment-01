@@ -1,12 +1,12 @@
 package leeseungho.domain;
 
-import lombok.Builder;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 import java.time.LocalDate;
 
-@Builder
 @Getter
+@AllArgsConstructor
 
 public class Rescene {
     private Long id;
@@ -15,12 +15,15 @@ public class Rescene {
     private String groupName; // 소속 그룹
     private String word; // 유행어
 
-    public void update(String name, LocalDate birth, String word) {
+    public void update(String name, LocalDate birth, String groupName, String word) {
         if (name != null) {
             this.name = name;
         }
         if (birth != null) {
             this.birth = birth;
+        }
+        if (groupName != null) {
+            this.groupName = groupName;
         }
         if (word != null) {
             this.word = word;

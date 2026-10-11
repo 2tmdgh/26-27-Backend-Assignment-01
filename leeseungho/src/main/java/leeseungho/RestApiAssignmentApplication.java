@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class RestApiAssignmentApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(leeseungho.RestApiAssignmentApplication.class, args);
+        SpringApplication.run(RestApiAssignmentApplication.class, args);
     }
 
 }
