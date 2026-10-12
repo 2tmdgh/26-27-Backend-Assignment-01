@@ -7,7 +7,6 @@ import java.time.LocalDate;
 
 @Getter
 @AllArgsConstructor
-
 public class Rescene {
     private Long id;
     private String name; // 맴버 이름

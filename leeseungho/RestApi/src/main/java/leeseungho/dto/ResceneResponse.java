@@ -1,11 +1,10 @@
 package leeseungho.dto;
 
 import leeseungho.domain.Rescene;
-import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import java.time.LocalDate;
-
-@Getter
+@RequiredArgsConstructor
 public class ResceneResponse {
     private final Long id; // -> record 타입으로 변경 가능
     private final String name;
