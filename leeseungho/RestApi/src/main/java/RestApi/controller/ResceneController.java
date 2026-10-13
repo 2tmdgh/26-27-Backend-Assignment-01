@@ -1,8 +1,8 @@
-package leeseungho.controller;
+package RestApi.controller;
 
-import leeseungho.dto.ResceneRequest;
-import leeseungho.dto.ResceneResponse;
-import leeseungho.service.ResceneService;
+import RestApi.dto.ResceneRequest;
+import RestApi.dto.ResceneResponse;
+import RestApi.service.ResceneService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;

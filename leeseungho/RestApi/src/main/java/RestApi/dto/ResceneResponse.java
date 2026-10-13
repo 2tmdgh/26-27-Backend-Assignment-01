@@ -1,10 +1,10 @@
-package leeseungho.dto;
+package RestApi.dto;
 
-import leeseungho.domain.Rescene;
-import lombok.RequiredArgsConstructor;
+import RestApi.domain.Rescene;
+import lombok.Getter;
 
 import java.time.LocalDate;
-@RequiredArgsConstructor
+@Getter
 public class ResceneResponse {
     private final Long id; // -> record 타입으로 변경 가능
     private final String name;

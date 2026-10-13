@@ -1,6 +1,6 @@
-package leeseungho.repository;
+package RestApi.repository;
 
-import leeseungho.domain.Rescene;
+import RestApi.domain.Rescene;
 import org.springframework.stereotype.Repository;
 
 import java.time.LocalDate;

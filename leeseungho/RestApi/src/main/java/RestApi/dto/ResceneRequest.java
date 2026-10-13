@@ -1,4 +1,4 @@
-package leeseungho.dto;
+package RestApi.dto;
 
 import lombok.Getter;
 

@@ -1,4 +1,4 @@
-package leeseungho.domain;
+package RestApi.domain;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

@@ -1,9 +1,9 @@
-package leeseungho.service;
+package RestApi.service;
 
-import leeseungho.domain.Rescene;
-import leeseungho.dto.ResceneRequest;
-import leeseungho.dto.ResceneResponse;
-import leeseungho.repository.ResceneRepository;
+import RestApi.domain.Rescene;
+import RestApi.dto.ResceneRequest;
+import RestApi.dto.ResceneResponse;
+import RestApi.repository.ResceneRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
